@@ -18,13 +18,16 @@ In this activity, you'll be practicing object-oriented programming (OOP) by crea
 2. In `Bag.test.js`, construct the tests that will verify that you have included all of the required components outlined in the class diagram above. A few to consider using:
     - Test that you can create an instance of the `Bag` class
     - Test that the `weight` and `id` have been assigned correctly.
-    - Create a test to add a `Person` to a `Bag` using `assignOwner()`. You won't be able to assign a person until you completing the next section.
+    - `owner`: The person assigned to a `Bag`. Initialized with a value of `null`.
+    - Verify you can get the initial `owner` using `getOwner`.
+    - Create a test to update `owner` with a `Person` assigned to a `Bag` using `assignOwner()`. You won't be able to assign a person until you completing the next section.
 3. In `Bag.js`, create code that meets the following specifications:
     - **Properties**
         - `weight`: The weight of the bag.
         - `id`: An id for the bag.
     - **Methods**
-        - `assignOwner(Person)`: Assigns a `Person` to their corresponding `Bag`.
+        - `getOwner()`: Returns the `Person` assigned to the bag.
+        - `assignOwner(person)` Updates `owner` with a `person` assigned to a `Bag`.
 4. Verify your tests work by running `npm test ./__tests__/classes/Bag.test.js`. 
 
 ## `Person`
@@ -64,11 +67,12 @@ In this activity, you'll be practicing object-oriented programming (OOP) by crea
 4. Verify your tests work by running `npm test ./__tests__/classes/Plane.test.js`. 
 
 ## `Airport`
-1. In `Plane.test.js`, import the `Plane` class from `Plane.js` that has been created for you.
-2. In `Plane.test.js`, construct the tests that will verify that you have included all of the required components outlined in the class diagram above. A few to consider using:
-    - Test that `company`, `origin`, and `destination` are assigned to the correct value.
-    - Check that the `passengers` array initializes as an empty array.
-    - Verify that you can add a `Person` to the `passengers` array using `addPassenger`.
+1. In `Airport.test.js`, import the `Airport` class from `Airport.js` that has been created for you.
+2. In `Airport.test.js`, construct the tests that will verify that you have included all of the required components outlined in the class diagram above. A few to consider using:
+    - Test that `name` and `planes` are assigned to the correct value.
+    - Test that `airportCode` is the correct value
+    - Check that the `planes` array initializes as an empty array.
+    - Verify that you can add `Plane` objects to the planes array using `addPlane`.
 3. In `Plane.js`, create code that meets the following specifications:
     - **Properties**
         - `name`: The name of the Airport.

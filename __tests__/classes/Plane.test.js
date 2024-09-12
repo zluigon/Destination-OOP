@@ -9,14 +9,14 @@ describe("Plane tests", () => {
   });
 
   it("assigns properties", () => {
-    const plane = new Plane("Delta", "JP");
-    expect(plane.company).toBe("Delta");
+    const plane = new Plane("United Airlines", "DFW");
+    expect(plane.company).toBe("United Airlines");
     expect(plane.origin).toBe("EWR");
-    expect(plane.destination).toBe("JP");
+    expect(plane.destination).toBe("DFW");
   });
 
   it("initializes and adds passengers", () => {
-    const plane = new Plane("Delta", "JP");
+    const plane = new Plane("United Airlines", "DFW");
     const person = new Person("Poseidon", "Atlantis");
     expect(plane.getPassengers().length).toBe(0);
     plane.addPassenger(person);

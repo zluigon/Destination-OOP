@@ -1,13 +1,20 @@
 class Airport {
-#planes;
+  #planes;
 
-constructor(name){
+  constructor(name) {
     this.name = name;
+    this.#planes = [];
+  }
+
+  static airportCode = "EWR";
+
+  getPlanes() {
+    return this.#planes;
+  }
+
+  addPlane(plane) {
+    this.#planes.push(plane);
+  }
 }
-
-static airportCode = "EWR";
-
-}
-
 
 module.exports = Airport;

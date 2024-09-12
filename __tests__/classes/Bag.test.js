@@ -1,4 +1,5 @@
 const Bag = require("../../classes/Bag");
+const Person = require("../../classes/Person");
 
 describe("Bag tests", () => {
   it("instanceOf Bag", () => {
@@ -14,12 +15,9 @@ describe("Bag tests", () => {
 
   it("gets and sets owner", () => {
     const bag = new Bag(4, 80);
+    const person = new Person("Zeus", "Olympia");
     expect(bag.getOwner()).toBe(null);
-    bag.setOwner("abc");
-    expect(bag.getOwner()).toBe("abc");
-  })
-
-
-
-
+    bag.setOwner(person);
+    expect(bag.getOwner()).toBeInstanceOf(Person);
+  });
 });

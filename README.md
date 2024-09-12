@@ -8,7 +8,7 @@ In this activity, you'll be practicing object-oriented programming (OOP) by crea
 ![OOP Airport Class Diagram](./assets/OOPClass.png)
 
 **GOAL**: You should:
-- Write tests for each class in the corresponding test file in the `__test__` folder (e.g. Bag tests should be written in Bag.test.js)
+- Write tests for each class in the corresponding test file in the `__tests__` folder (e.g. Bag tests should be written in Bag.test.js)
 - Create code that meets the design specifications outlined in the class diagram above and the more detailed specs outlined below.
 - Feel free to try your code out by importing classes in `main.js` and creating some instances in the `main()` function.
 
@@ -37,7 +37,7 @@ In this activity, you'll be practicing object-oriented programming (OOP) by crea
     - Test that you can create an instance of the `Person` class
     - Test that the `name` and `destination` have been assigned correctly.
     - Test that `bags` initializes as an empty array.
-    - Test that `addBags()` adds a bag to the `bags` array.
+    - Test that `addBag()` adds a bag to the `bags` array.
 3. In `Person.js`, create code that meets the following specifications:
     - **Properties**
         - `name`: The name of the person.
